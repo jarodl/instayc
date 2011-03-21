@@ -15,12 +15,19 @@ Usage
 =====
 
     $ instayc
+
       Instapaper username: bob
+
       Instapaper password:
+
       Success!
-    $ instayc -a "python, django, javascript, math, computer science"
+
+    $ instayc -a 'python, django, javascript, math, computer science'
+
     $ instayc
+
       Fetching new articles...
+
       14 articles were found!
 
 ============
