@@ -14,6 +14,8 @@ account.
 Usage
 =====
 
+Here is how to use it:::
+
 	$ instayc
 	Instapaper username: bob
 	Instapaper password:
@@ -27,9 +29,11 @@ Usage
 Installation
 ============
 
+Use pip:::
+
 	pip install instayc
 
-or..
+or..::
 
 	easy_install instayc
 
