@@ -1,0 +1,6 @@
+README.rst
+setup.py
+bin/instayc
+instayc/instayc.py
+instayc/__init__.py
+
