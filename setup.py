@@ -8,26 +8,23 @@ version = '0.1.0'
 
 install_requires = [
     "instapaperlib>=0.4.0",
+    "feedparser>=5.0.1",
 ]
 
 setup(
     name="instayc",
     version=version,
-    description="Python tool for auto adding hacker news articles to
+    description="Python tool for auto adding hacker news articles to\
     instapaper.",
     long_description=(open("README.md").read()),
     author="Jarod Luebbert",
     author_email="jarodluebbert@gmail.com",
     url="http://github.com/jarodl/instayc",
     packages=["instayc"],
+    scripts=["bin/instayc"],
     include_package_data=True,
     zip_safe=True,
     install_requires=install_requires,
-    entry_points="""
-    # -*- Entry points: -*-
-    [console scripts]
-    instayc=instayc.cmdline:main
-    """,
     license="MIT",
     classifiers=(
         "Development Status :: 3 - Alpha",

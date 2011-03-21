@@ -1,22 +1,23 @@
-#!/usr/bin/evn python
+#!/usr/bin/env python
 # encoding: utf-8
 
 import sys
 from optparse import OptionParser
-import instayc
+from instayc import Instayc
 
 def main():
     usage = "usage: %prog [options] arg1 arg2"
     parser = OptionParser(usage)
     parser.add_option("-a", "--add", action="store", type="string",
-        dest="add", help="add tags to your config", metavar="TAGS")
+        dest="add", help="add interests to your config", metavar="INTERESTS")
 
     (options, args) = parser.parse_args()
 
+    instayc = Instayc()
     if options.add:
-        print "adding tags"
+        instayc.add_interests(options.add)
     if len(args) == 0:
-        print "Grabbing urls"
+        instayc.update()
 
 if __name__ == '__main__':
     main()

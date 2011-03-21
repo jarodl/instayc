@@ -64,12 +64,13 @@ class Instayc:
         if current_interests == '':
             current_interests = interests
         else:
-            current_interests += ', ' + interests
+            current_interests = current_interests + ', ' + interests
         self.config.set(self.section, 'interests', current_interests)
         self.saveConfig()
 
     @requires_login
     def update(self):
+        print "Updating..."
         posts = parse(OPTIONS['feeds']['yc']).entries
         interests = self.config.get(self.section, 'interests').split(',')
 
@@ -85,11 +86,17 @@ class Instayc:
                 counted[word] = counted.get(word, 0) + count
             return counted
 
+        found = []
         for post in posts:
             title = str(post['title'].encode('utf-8'))
-            title_words = [word for word in title.split(' ')]
+            title_words = [word.lower() for word in title.split(' ')]
             title_words.extend(interests)
             counted = reduce(map(title_words))
             matches = [word for word, count in counted.items() if count > 1]
             if matches:
+                found.append((post['link'], title))
                 self.insta.add_item(post['link'], title)
+        print "Added %d article(s) to Instapaper: \n" % len(found)
+        for link, title in found:
+            print title
+        print ''
