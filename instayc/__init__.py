@@ -1,0 +1,1 @@
+from instayc import Instayc
