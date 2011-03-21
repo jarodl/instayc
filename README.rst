@@ -1,3 +1,4 @@
+=======
 instayc
 =======
 
@@ -9,8 +10,9 @@ Warning: you might want to wait until articles are put in their own
 folder to prevent a lot of unwanted links being added to your instapaper
 account.
 
+=====
 Usage
------
+=====
 
     > instayc
       Instapaper username: bob
@@ -21,8 +23,9 @@ Usage
       Fetching new articles...
       14 articles were found!
 
+============
 Installation
-------------
+============
 
     pip install instayc
 
@@ -30,8 +33,9 @@ or..
 
     easy_install instayc
 
+====
 TODO
-----
+====
 
 * articles that do not have a interest in the title are added sometimes
 * prevent duplicate interests in the config file
