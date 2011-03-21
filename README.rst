@@ -14,31 +14,24 @@ account.
 Usage
 =====
 
-    $ instayc
-
-    Instapaper username: bob
-
-    Instapaper password:
-
-    Success!
-
-    $ instayc -a 'python, django, javascript, math, computer science'
-
-    $ instayc
-
-    Fetching new articles...
-
-    14 articles were found!
+	$ instayc
+	Instapaper username: bob
+	Instapaper password:
+	Success!
+	$ instayc -a 'python, django, javascript, math, computer science'
+	$ instayc
+	Updating...
+	14 article(s) were added to Instapaper
 
 ============
 Installation
 ============
 
-    pip install instayc
+	pip install instayc
 
 or..
 
-    easy_install instayc
+	easy_install instayc
 
 ====
 TODO
