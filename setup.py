@@ -16,7 +16,7 @@ setup(
     version=version,
     description="Python tool for auto adding hacker news articles to\
     instapaper.",
-    long_description=(open("README.md").read()),
+    long_description=(open("./README.md").read()),
     author="Jarod Luebbert",
     author_email="jarodluebbert@gmail.com",
     url="http://github.com/jarodl/instayc",
