@@ -4,7 +4,7 @@
 from setuptools import setup
 import os, sys
 
-version = '0.1.0'
+version = '0.1.1'
 
 install_requires = [
     "instapaperlib>=0.4.0",
@@ -16,7 +16,7 @@ setup(
     version=version,
     description="Python tool for auto adding hacker news articles to\
     instapaper.",
-    long_description=(open("README.rst").read()),
+    long_description=(open("./README.rst").read()),
     author="Jarod Luebbert",
     author_email="jarodluebbert@gmail.com",
     url="http://github.com/jarodl/instayc",

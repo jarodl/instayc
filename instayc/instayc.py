@@ -73,6 +73,7 @@ class Instayc:
 
     @requires_login
     def update(self):
+        print "Updating..."
         posts = parse(OPTIONS['feeds']['yc']).entries
         interests = self.config.get(self.section, 'interests').split(',')
 

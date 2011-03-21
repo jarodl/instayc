@@ -14,7 +14,7 @@ account.
 Usage
 =====
 
-Here is how to use it:::
+Here is how to use it::
 
 	$ instayc
 	Instapaper username: bob
@@ -29,7 +29,7 @@ Here is how to use it:::
 Installation
 ============
 
-Use pip:::
+Use pip::
 
 	pip install instayc
 
