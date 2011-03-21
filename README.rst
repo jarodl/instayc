@@ -16,19 +16,19 @@ Usage
 
     $ instayc
 
-      Instapaper username: bob
+    Instapaper username: bob
 
-      Instapaper password:
+    Instapaper password:
 
-      Success!
+    Success!
 
     $ instayc -a 'python, django, javascript, math, computer science'
 
     $ instayc
 
-      Fetching new articles...
+    Fetching new articles...
 
-      14 articles were found!
+    14 articles were found!
 
 ============
 Installation
