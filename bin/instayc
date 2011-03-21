@@ -16,7 +16,7 @@ def main():
     instayc = Instayc()
     if options.add:
         instayc.add_interests(options.add)
-    if len(args) == 0:
+    elif len(args) == 0:
         instayc.update()
 
 if __name__ == '__main__':

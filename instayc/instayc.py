@@ -1,5 +1,5 @@
 import os
-from ConfigParser import SafeConfigParser
+from ConfigParser import SafeConfigParser, NoOptionError
 from getpass import getpass
 from instapaperlib import Instapaper
 from feedparser import parse
@@ -39,8 +39,11 @@ class Instayc:
 
     def requires_login(fn):
         def wrapped(self):
-            self.authorize(self.config.get(self.section, 'email'),
-                self.config.get(self.section, 'password'))
+            try:
+                self.authorize(self.config.get(self.section, 'email'),
+                    self.config.get(self.section, 'password'))
+            except NoOptionError:
+                self.login()
             fn(self)
         return wrapped
 
